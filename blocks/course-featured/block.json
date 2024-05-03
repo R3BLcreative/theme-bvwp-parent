@@ -1,0 +1,23 @@
+{
+	"title": "Featured Courses",
+	"name": "infinite/course-featured",
+	"category": "course-blocks",
+	"description": "Displays a list of featured courses.",
+	"apiVersion": 2,
+	"supports": {
+		"align": false,
+		"customClassName": false
+	},
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "render.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"show_preview": true
+			}
+		}
+	}
+}

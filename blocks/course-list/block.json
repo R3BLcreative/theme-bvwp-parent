@@ -1,0 +1,23 @@
+{
+	"title": "Course List",
+	"name": "infinite/course-list",
+	"category": "course-blocks",
+	"description": "Displays a list of all published courses.",
+	"apiVersion": 2,
+	"supports": {
+		"align": false,
+		"customClassName": false
+	},
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "render.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"show_preview": true
+			}
+		}
+	}
+}
