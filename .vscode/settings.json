@@ -1,0 +1,7 @@
+{
+	"tailwindCSS.experimental.configFile": {
+		"tw-blocks.config.js": "blocks/**",
+		"tw-frontend.config.js": ["*.php", "includes/**", "partials/**"]
+	},
+	"intelephense.environment.includePaths": ["../../../"]
+}

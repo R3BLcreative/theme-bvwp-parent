@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@config './../tw-blocks.config.js';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.infinite-section {
+		@apply py-[80px] bg-neutral-200 text-body py-20 relative;
+	}
+
+	.infinite-grid {
+		@apply grid sm:grid-cols-4 sm:w-full sm:max-w-sm sm:gap-6 sm:px-6 md:grid-cols-9 md:max-w-full md:px-12 lg:grid-cols-12 lg:gap-8 lg:px-20 lg:max-w-lg lg:w-full xl:px-0 mx-auto relative;
+	}
+
+	.h1 {
+		@apply font-serif font-bold sm:text-4xl md:text-6xl text-accent mb-6 sm:text-4xl md:text-7xl tracking-wider font-bold sm:first-line:text-4xl md:first-line:text-5xl first-line:block first-line:text-white first-line:tracking-normal;
+	}
+
+	.h2 {
+		@apply sm:text-3xl md:text-4xl font-serif font-semibold mb-3 drop-shadow-md text-body-300;
+	}
+
+	.h3 {
+		@apply sm:text-xl md:text-2xl font-serif font-semibold uppercase text-center;
+	}
+
+	.btn_primary {
+		@apply block w-fit text-sm py-3 px-4 rounded-md font-semibold transition-all ease-in-out flex flex-row flex-nowrap items-center justify-center gap-3 bg-primary text-white fill-white hover:bg-secondary hover:text-body-600 hover:fill-body-600 hover:gap-5 hover:shadow-lg disabled:pointer-events-none disabled:bg-surface-100 disabled:text-body disabled:fill-body;
+	}
+
+	.btn_secondary {
+		@apply block w-fit text-sm py-3 px-4 rounded-md font-semibold transition-all ease-in-out flex flex-row flex-nowrap items-center justify-center gap-3 bg-secondary text-body-600 fill-body-600 hover:bg-primary hover:gap-5 hover:text-white hover:fill-white hover:shadow-lg;
+	}
+
+	.btn_tertiary {
+		@apply transition-all ease-in-out font-semibold hover:text-secondary-200 hover:fill-secondary-200 relative inline-flex flex-row flex-nowrap items-center justify-center gap-2 overflow-hidden border-b border-b-transparent after:content-[''] after:block after:absolute after:bottom-0 after:left-0 after:right-0 after:max-w-0 after:h-[1px] after:transition-all after:duration-300 after:ease-in-out after:bg-secondary-200 hover:after:w-full hover:after:max-w-[999px];
+	}
+
+	.btn_icon {
+		@apply block w-fit text-sm py-3 px-4 transition-all ease-in-out flex flex-row flex-nowrap items-center justify-center text-primary fill-primary hover:text-secondary-200 hover:fill-secondary-200 disabled:pointer-events-none disabled:text-body disabled:fill-body;
+	}
+}
+
+.wp-block {
+	max-width: 100%;
+}
