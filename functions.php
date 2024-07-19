@@ -138,7 +138,7 @@ function infinite_add_to_cart() {
 
 	$_SESSION['cart']['items'][$id] = [
 		'id' => $id,
-		'sched' => $sched
+		'sched' => $sched,
 	];
 
 	// Return to sender

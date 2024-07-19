@@ -26,9 +26,6 @@ extract($TheBlock->config);
 	<div class="infinite-grid mt-10">
 
 		<?php foreach ($licenses as $license) : ?>
-			<div class="col-span-full">
-				<h3 class="h3"><?php echo $license['title']; ?></h3>
-			</div>
 
 			<?php foreach ($license['courses'] as $course) : ?>
 				<a href="<?php echo get_the_permalink($course); ?>" class="sm:col-span-full md:col-span-3 lg:col-span-4 bg-white border p-4 rounded-lg shadow-sm transition-all ease-in-out group/card hover:-translate-y-3 hover:shadow-lg" aria-label="View course">

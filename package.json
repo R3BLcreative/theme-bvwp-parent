@@ -1,7 +1,7 @@
 {
 	"name": "bvwp",
-	"version": "1.0.8",
-	"last_version": "1.0.7",
+	"version": "1.0.9",
+	"last_version": "1.0.8",
 	"scripts": {
 		"buildf": "npm-run-all --sequential twbuildf jsbuildf",
 		"twbuildf": "tailwindcss -i ./src/frontend.css -o ./css/infinite-theme.css --postcss --minify",

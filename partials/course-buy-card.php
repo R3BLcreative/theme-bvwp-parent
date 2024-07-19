@@ -56,6 +56,7 @@
 				</div>
 
 				<input id="course_id" name="course_id" type="hidden" value="<?php echo get_the_ID(); ?>">
+				<input id="course_instructor" name="course_instructor" type="hidden" value="<?php the_field('course_instructor'); ?>">
 
 				<?php get_template_part('partials/field', 'schedule', ['id' => get_the_ID()]); ?>
 
